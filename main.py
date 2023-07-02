@@ -1,7 +1,6 @@
 import os
 import uvicorn
 import requests
-import asyncio
 from fastapi import FastAPI
 from threading import Thread
 from time import sleep
@@ -19,10 +18,6 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"message": "WAKE UP SLEEPY HEAD!"}
-
-@app.on_event("startup")
-async def startup_event():
-    await asyncio.sleep(1)
 
 def fetch_url(url: str):
     while True:
@@ -43,6 +38,8 @@ def url_loop():
 
     with open(FILE_NAME, "r") as f:
         urls = f.readlines()
+
+    sleep(1)
 
     for url in urls:
         thread = Thread(target=fetch_url, args=(url.strip(),))
