@@ -6,5 +6,6 @@ Make a replit with this repo.
 
 Write inside "wake-up.txt" the URLs of the replit web servers to make GET requests to keep alive (one URL per line).
 
-https://github.com/Peter1169/Wakey-Wakey/assets/46818665/334e6e60-f891-4c81-87ab-7aa720cf9484
+https://github.com/Peter1169/Wakey-Wakey/assets/46818665/f5c1d58f-8a89-4f7a-8a0a-9c3bfeb2e697
+
 
