@@ -3,10 +3,10 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "myproject"
-version = "0.1.0"
-description = ""
-authors = ["Your Name <yourname@example.com>"]
+name = "Wakey-Wakey"
+version = "1.0.0"
+description = "Keep alive replit web servers"
+authors = ["Peter1169 <peter1169tech@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
