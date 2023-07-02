@@ -1,6 +1,7 @@
 import os
 import uvicorn
 import requests
+import asyncio
 from fastapi import FastAPI
 from threading import Thread
 from time import sleep
@@ -18,6 +19,10 @@ app = FastAPI()
 @app.get("/")
 async def root():
     return {"message": "WAKE UP SLEEPY HEAD!"}
+
+@app.on_event("startup")
+async def startup_event():
+    await asyncio.sleep(1)
 
 def fetch_url(url: str):
     while True:
