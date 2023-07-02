@@ -1,0 +1,1 @@
+run="poetry run python3.10 main.py || poetry install && poetry run python3.10 main.py"
