@@ -12,6 +12,7 @@ authors = ["Peter1169 <peter1169tech@gmail.com>"]
 python = "^3.10"
 fastapi = "^0.99.1"
 uvicorn = "^0.22.0"
+requests = "^2.31.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
